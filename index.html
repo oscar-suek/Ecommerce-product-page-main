@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="main.css">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+<body>
+  <main class="main">
+    <div id="firstdiv">
+      <div id="div1">
+        <div id="d1"><img src="./images/logo.svg" alt="logo"></div>
+        <div class="d2">Collections</div>
+        <div class="d2">Men</div>
+        <div class="d2">Women</div>
+        <div class="d2">About</div>
+        <div class="d2">Contact</div>
+      </div>
+      <div id="div2">
+        <div id="d3"><img src="./images/icon-cart.svg" alt="cart image"></div>
+        <div id="num1">3</div>
+        <div id="d4"><img src="./images/image-avatar.png" alt="profile photo" width="45px" height="45px"></div>
+      </div>
+    </div><hr id="hr">
+    <div id="lostdiv">
+      <div id="ld1">Cart</div><hr>
+      <div id="ld2">
+        <span id="span1">Your cart is empty.</span>
+        <div id="maincart">
+          <div id="cartdiv">
+            <img src="./images/image-product-1-thumbnail.jpg" alt="product picture" width="45px" height="45px">
+            <div id="cartdiv1">
+              <div>Fall Limited Edition Sneakers</div>
+              <div>&dollar;125.00 x <span id="itemquantity">3</span> <span id="finalprice">&dollar;<span id="totprice">375.00</span></span></div>
+            </div>
+            <img src="./images/icon-delete.svg" alt="delete" height="20px" id="delimg">
+          </div>
+          <button id="b2">Checkout</button>
+        </div>
+      </div>
+    </div>
+    <div id="maindiv">
+      <div id="secdiv">
+        <div><img src="./images/image-product-1.jpg" alt="product one" class="img1"></div>
+        <div id="div-items">
+          <div id="pic1"><img src="./images/image-product-1-thumbnail.jpg" alt="product one thumbnail" id="ig1" class="img2"></div>
+          <div id="pic2"><img src="./images/image-product-2-thumbnail.jpg" alt="product two thumbnail" id="ig2" class="img2"></div>
+          <div id="pic3"><img src="./images/image-product-3-thumbnail.jpg" alt="product three thumbnail" id="ig3" class="img2"></div>
+          <div id="pic4"><img src="./images/image-product-4-thumbnail.jpg" alt="product four thumbnail" id="ig4" class="img2"></div>
+        </div>
+      </div>
+      <div id="thirddiv">
+        <p id="p1">sneaker company</p>
+        <p id="p2">Fall Limited Edition Sneakers</p>
+        <p id="p3">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+        <div id="td">
+          <div id="td1">&dollar;125.00</div>
+          <div id="td2">50%</div>
+        </div>
+        <p id="p4">&dollar;250.00</p>
+        <div id="sd">
+          <div id="sd1">
+            <div id="xd1"><img src="./images/icon-minus.svg" alt="minus" class="limg"></div>
+            <p id="p5">0</p>
+            <div id="xd2"><img src="./images/icon-plus.svg" alt="plus" class="limg"></div>
+          </div>
+          <div id="sd2">
+            <button id="b1"><img src="./images/icon-cart.svg" alt="cart" width="15px" height="15px" id="img3"> Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div id="lightbox">
+    <div><img src="./images/image-product-1.jpg" alt="product one" id="hugeimg" data-item-index="0"></div>
+    <img src="./images/icon-previous.svg" alt="previous" id="previousbutton">
+    <img src="./images/icon-next.svg" alt="next" id="nextbutton">
+    <img src="./images/icon-close.svg" alt="close" id="closebutton">
+    <div id="lightbox-items">
+      <div id="pick1"><img src="./images/image-product-1-thumbnail.jpg" data-item-index="0" alt="product one thumbnail" id="hg1" class="himg2"></div>
+      <div id="pick2"><img src="./images/image-product-2-thumbnail.jpg" data-item-index="1" alt="product two thumbnail" id="hg2" class="himg2"></div>
+      <div id="pick3"><img src="./images/image-product-3-thumbnail.jpg" data-item-index="2" alt="product three thumbnail" id="hg3" class="himg2"></div>
+      <div id="pick4"><img src="./images/image-product-4-thumbnail.jpg" data-item-index="3" alt="product four thumbnail" id="hg4" class="himg2"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
