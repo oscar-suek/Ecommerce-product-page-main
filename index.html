@@ -13,6 +13,7 @@
   <main class="main">
     <div id="firstdiv">
       <div id="div1">
+        <div id="menu-button"><img src="./images/icon-menu.svg" alt="menu"></div>
         <div id="d1"><img src="./images/logo.svg" alt="logo"></div>
         <div class="d2">Collections</div>
         <div class="d2">Men</div>
@@ -21,8 +22,10 @@
         <div class="d2">Contact</div>
       </div>
       <div id="div2">
-        <div id="d3"><img src="./images/icon-cart.svg" alt="cart image"></div>
-        <div id="num1">3</div>
+        <div>
+          <div id="d3"><img src="./images/icon-cart.svg" alt="cart image"></div>
+          <div id="num1">3</div>
+        </div>
         <div id="d4"><img src="./images/image-avatar.png" alt="profile photo" width="45px" height="45px"></div>
       </div>
     </div><hr id="hr">
@@ -45,7 +48,11 @@
     </div>
     <div id="maindiv">
       <div id="secdiv">
-        <div><img src="./images/image-product-1.jpg" alt="product one" class="img1"></div>
+        <div id="prev1"><img src="./images/icon-previous.svg" alt="previous"></div>
+        <div id="next1"><img src="./images/icon-next.svg" alt="next"></div>
+        <div id="simg">
+          <img src="./images/image-product-1.jpg" alt="product one" class="img1" data-item-index="0">
+        </div>
         <div id="div-items">
           <div id="pic1"><img src="./images/image-product-1.jpg" alt="product one thumbnail" id="ig1" class="img2"></div>
           <div id="pic2"><img src="./images/image-product-2.jpg" alt="product two thumbnail" id="ig2" class="img2"></div>
@@ -86,6 +93,16 @@
       <div id="pick2"><img src="./images/image-product-2.jpg" data-item-index="1" alt="product two thumbnail" id="hg2" class="himg2"></div>
       <div id="pick3"><img src="./images/image-product-3.jpg" data-item-index="2" alt="product three thumbnail" id="hg3" class="himg2"></div>
       <div id="pick4"><img src="./images/image-product-4.jpg" data-item-index="3" alt="product four thumbnail" id="hg4" class="himg2"></div>
+    </div>
+  </div>
+  <div id="menu-lightbox">
+    <div id="lb1">
+      <div id="close-menu"><img src="./images/icon-close.svg" alt="close"></div>
+      <div class="d3">Collections</div>
+      <div class="d3">Men</div>
+      <div class="d3">Women</div>
+      <div class="d3">About</div>
+      <div class="d3">Contact</div>
     </div>
   </div>
   <script src="script.js"></script>

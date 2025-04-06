@@ -20,6 +20,11 @@ const previousbutton = document.querySelector('#previousbutton')
 const nextbutton = document.querySelector('#nextbutton')
 const closeButton = document.querySelector('#closebutton')
 const lightbox = document.querySelector('#lightbox')
+const menuButton = document.querySelector('#menu-button')
+const menuLightbox = document.querySelector('#menu-lightbox')
+const closeMenu = document.querySelector('#close-menu')
+const prevBtn = document.querySelector('#prev1')
+const nextBtn = document.querySelector('#next1')
 
 function changeQuantity(){
     quantity = 0
@@ -180,6 +185,50 @@ function previous(){
     })
 }
 
+function changeNext(){
+    nextBtn.addEventListener('click', function(){
+        x = bigImg.dataset.itemIndex
+        if (x == 0){
+            bigImg.src = himg[1].src
+            bigImg.dataset.itemIndex = 1
+        }
+        if (x == 1){
+            bigImg.src = himg[2].src
+            bigImg.dataset.itemIndex = 2   
+        }
+        if (x == 2){
+            bigImg.src = himg[3].src
+            bigImg.dataset.itemIndex = 3
+        }
+        if (x == 3){
+            bigImg.src = himg[0].src
+            bigImg.dataset.itemIndex = 0
+        }
+    })
+}
+
+function changePrev(){
+    prevBtn.addEventListener('click', function(){
+        x = bigImg.dataset.itemIndex
+        if (x == 0){
+            bigImg.src = himg[3].src
+            bigImg.dataset.itemIndex = 3
+        }
+        if (x == 1){
+            bigImg.src = himg[0].src
+            bigImg.dataset.itemIndex = 0
+        }
+        if (x == 2){
+            bigImg.src = himg[1].src
+            bigImg.dataset.itemIndex = 1
+        }
+        if (x == 3){
+            bigImg.src = himg[2].src
+            bigImg.dataset.itemIndex = 2
+        }
+    })
+}
+
 function close(){
     closeButton.addEventListener('click', function(){
         lightbox.style.display = 'none'
@@ -188,7 +237,23 @@ function close(){
 
 function open(){
     bigImg.addEventListener('click', function(){
-        lightbox.style.display = 'block'
+        if(600 >= window.innerWidth){
+            console.log('screen not large enough')
+        }
+        else{
+            lightbox.style.display = 'block'
+        }
+    })
+}
+
+function openMenu(){
+    menuButton.addEventListener('click', function(){
+        menuLightbox.style.display = 'block'
+        console.log(window.innerWidth)
+    })
+
+    closeMenu.addEventListener('click', function(){
+        menuLightbox.style.display = 'none'
     })
 }
 
@@ -202,4 +267,7 @@ next()
 previous()
 close()
 open()
+openMenu()
+changeNext()
+changePrev()
 
